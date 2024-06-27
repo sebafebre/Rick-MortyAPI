@@ -16,7 +16,20 @@ async function verTodos() {
     mostrarPersonajes(todosPersonajes);
 }
 
+function verFiltro() {
+    const name = document.getElementById('name').value;
+    const status = document.getElementById('status').value;
+    const species = document.getElementById('species').value;
+    const type = document.getElementById('type').value;
+    const gender = document.getElementById('gender').value;
 
+    const url = `https://rickandmortyapi.com/api/character/?name=${name}&status=${status}&species=${species}&type=${type}&gender=${gender}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarPersonajes(data.results))
+        .catch(error => showError(error));
+}
 
 function mostrarPersonajes(personajes) {
     const output = document.getElementById('output');
