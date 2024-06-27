@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #047560;
+    margin: 0;
+}
+
+.titulo {
+    top: 0px;
+    background-color: #e8f83c;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #15ff00;
+    margin: 0;
+}
+
+.todos {
+    text-align: center;
+    padding: 10px;
+}
+
+#btnTodos {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #07b0ce;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#btnTodos:hover {
+    background-color: #07ffb5;
+    color: #141414;
+}
+
+#filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#filtros input,
+#filtros button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+#filtros input {
+    flex: 1;
+    max-width: 200px;
+}
+
+#filtros button {
+    background-color: #07b0ce;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#filtros button:hover {
+    background-color: #07ffb5;
+    color: #141414;
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cuadroPersonaje {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cuadroPersonaje h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.cuadroPersonaje img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cuadroPersonaje p {
+    margin: 5px 0;
+    color: #666;
+}
